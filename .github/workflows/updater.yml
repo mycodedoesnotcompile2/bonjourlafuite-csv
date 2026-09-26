@@ -1,0 +1,47 @@
+name: Daily updater
+on:
+  workflow_dispatch
+  #schedule:
+  #  - cron:  '10 03 * * *'
+permissions:
+  contents: write
+
+env:
+  REPO_DIR: /tmp/bonjour-la-fuite
+  LEAKS_DIR: /tmp/bonjour-la-fuite/leaks
+  OUT_FILE: /tmp/bonjourlafuite_eu_org.csv
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v7
+
+    - name: Install prerequisites
+      run: |
+        pip install -r "$GITHUB_WORKSPACE/_resources/requirements.txt"
+    
+    - name: Getting latest version
+      run: |
+        cd /tmp/
+        git clone --depth=1 https://framagit.org/aeris/bonjour-la-fuite.git "$REPO_DIR"
+
+    - name: Process latest version
+      run: |
+        cd /tmp/
+        python "$GITHUB_WORKSPACE/_resources/script.py" -d "$LEAKS_DIR" -o "$OUT_FILE"
+
+    - name: Check and push
+      run: |
+        cd /tmp/
+        
+        if (( $(wc -c < "$OUT_FILE") > $(wc -c < "$GITHUB_WORKSPACE/bonjourlafuite_eu_org.csv") )); then
+          cp "$OUT_FILE" "$GITHUB_WORKSPACE/bonjourlafuite_eu_org.csv"
+        fi
+
+        git config user.name updating-bot
+        git config user.email github-actions@github.com
+        git pull
+        git commit -a -m "updating bot - $(date '+%Y/%m/%d')"
+        git push
+    
