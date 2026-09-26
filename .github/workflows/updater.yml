@@ -9,13 +9,21 @@ permissions:
 env:
   REPO_DIR: /tmp/bonjour-la-fuite
   LEAKS_DIR: /tmp/bonjour-la-fuite/leaks
-  OUT_FILE: /tmp/bonjourlafuite_eu_org.csv
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v7
+
+    - name: Set env vars
+      run: |
+        DEFAULT_OUT_FILE_NAME='bonjourlafuite_eu_org.csv'
+        OUT_FILE="/tmp/$DEFAULT_OUT_FILE_NAME"
+        REPO_FILE="$GITHUB_WORKSPACE/$DEFAULT_OUT_FILE_NAME"
+        
+        echo "OUT_FILE=$OUT_FILE" >> $GITHUB_ENV
+        echo "REPO_FILE=$REPO_FILE" >> $GITHUB_ENV
 
     - name: Install prerequisites
       run: |
@@ -35,13 +43,12 @@ jobs:
       run: |
         cd /tmp/
         
-        if (( $(wc -c < "$OUT_FILE") > $(wc -c < "$GITHUB_WORKSPACE/bonjourlafuite_eu_org.csv") )); then
-          cp "$OUT_FILE" "$GITHUB_WORKSPACE/bonjourlafuite_eu_org.csv"
+        if (( $(wc -c < "$OUT_FILE") > $(wc -c < "$REPO_FILE") )); then
+          cp "$OUT_FILE" "$REPO_FILE"
         fi
 
         git config user.name updating-bot
         git config user.email github-actions@github.com
         git pull
-        git commit -a -m "updating bot - $(date '+%Y/%m/%d')"
+        git commit "$REPO_FILE" -m "updating bot - $(date '+%Y/%m/%d')"
         git push
-    
