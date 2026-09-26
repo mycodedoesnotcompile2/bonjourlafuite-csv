@@ -41,10 +41,10 @@ jobs:
 
     - name: Check and push
       run: |
-        cd /tmp/
+        cd $GITHUB_WORKSPACE
         
         if (( $(wc -c < "$OUT_FILE") > $(wc -c < "$REPO_FILE") )); then
-          cp "$OUT_FILE" "$REPO_FILE"
+          cp -vf "$OUT_FILE" "$REPO_FILE"
         fi
 
         git config user.name updating-bot
