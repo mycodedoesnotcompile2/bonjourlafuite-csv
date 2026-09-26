@@ -2,7 +2,7 @@ bonjourlafuite.eu.org CSV dataset
 =================================
 The automatically daily updated CSV dataset of [bonjourlafuite.eu.org](https://bonjourlafuite.eu.org/)
 
-The data model is following the [upstream one](https://framagit.org/aeris/bonjour-la-fuite/-/blob/257e242ed42e5ddd7fa8a24525278d93e220f681/leaks.yaml)
+The data model is following the [upstream one](https://framagit.org/aeris/bonjour-la-fuite/-/blob/257e242ed42e5ddd7fa8a24525278d93e220f681/leaks.yaml):
 ```
 Exemple d'entrée :
 - processor: Responsable de traitement concerné
