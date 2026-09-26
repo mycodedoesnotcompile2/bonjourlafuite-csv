@@ -6,6 +6,7 @@ import os
 import argparse
 import csv
 import concurrent.futures
+import urllib.parse
 
 import pandas as pd
 import yaml
@@ -37,11 +38,12 @@ def process_yaml(filepath):
         leak.setdefault('organization_type', 'private_company')
 
         for i, link in enumerate(leak.get("links", [])):
-            if isinstance(link, str) and link.startswith("img/"):
-                leak["links"][i] = WEBSITE_BASEURL + link
-
-            elif (isinstance(link, dict) and link.get("href", "").startswith("img/")):
-                link["href"] = WEBSITE_BASEURL + link["href"]
+            for i, link in enumerate(leak.get("links", [])):
+                if isinstance(link, str) and link.lstrip("/").startswith("img/"):
+                    leak["links"][i] = urllib.parse.urljoin(WEBSITE_BASEURL, link)
+                    
+                elif isinstance(link, dict) and link.get("href", "").lstrip("/").startswith("img/"):
+                    link["href"] = urllib.parse.urljoin(WEBSITE_BASEURL, link["href"])
 
         return leak, None
 
