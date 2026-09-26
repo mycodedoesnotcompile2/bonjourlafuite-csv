@@ -32,5 +32,5 @@ organization_type est a choisir entre :
 Copyright and license
 ---------------------
 
-All trademarks, service marks, trade names and product names appearing on this repository are the property of their respective owners.  
+All trademarks, service marks, trade names, and product names mentioned in this repository belong to their respective owners.  
 Material distributed here follow the [upstream MIT licence](https://framagit.org/aeris/bonjour-la-fuite).
