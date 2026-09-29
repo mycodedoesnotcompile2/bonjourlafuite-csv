@@ -89,7 +89,7 @@ def main():
     df = pd.DataFrame(rows, columns=df_columns)
     df["date"] = pd.to_datetime(df["date"], format="%Y-%m-%d")
 
-    df = df.sort_values(by='date', ascending=True).reset_index(drop=True)
+    df = df.sort_values(by=['date', 'processor'], ascending=[True, True]).reset_index(drop=True)
     df.to_csv(options.output_file, sep=";", quoting=csv.QUOTE_ALL, index=False, lineterminator="\n")
 
 
