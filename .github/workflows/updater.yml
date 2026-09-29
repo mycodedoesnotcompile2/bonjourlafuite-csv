@@ -10,7 +10,8 @@ permissions:
 env:
   REPO_DIR: /tmp/bonjour-la-fuite
   LEAKS_DIR: /tmp/bonjour-la-fuite/leaks
-
+  APT: sudo apt -y -qq -o=Dpkg::Use-Pty=0
+  
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -28,6 +29,7 @@ jobs:
 
     - name: Install prerequisites
       run: |
+        $APT update && $APT install colordiff
         pip install -r "$GITHUB_WORKSPACE/_resources/requirements.txt"
     
     - name: Getting latest version
@@ -39,6 +41,11 @@ jobs:
       run: |
         cd /tmp/
         python "$GITHUB_WORKSPACE/_resources/script.py" -d "$LEAKS_DIR" -o "$OUT_FILE"
+
+    - name: Show diff
+      run: |
+        cd /tmp/
+        colordiff -s "$REPO_FILE" "$OUT_FILE" || true
 
     - name: Check and push
       run: |
