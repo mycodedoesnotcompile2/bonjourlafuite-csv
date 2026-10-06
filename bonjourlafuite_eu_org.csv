@@ -586,3 +586,4 @@
 "2026-10-02";"confirmed";"LDLC";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Numéro de téléphone', 'Numéro de fax', 'Langue', 'Salutation', 'Codes clients techniques', 'Type de client (particulier/professionnel)', 'Date de dernière connexion', 'Date d’inscription']";"";"['https://bonjourlafuite.eu.org/img/ldlc-2.png']"
 "2026-10-02";"confirmed";"Région Hauts-de-France";"Atexo";"private_company";"";"['Nom, prénom', 'Adresse email']";"";"['https://bonjourlafuite.eu.org/img/hauts-de-france.jpg']"
 "2026-10-04";"confirmed";"Digit RE group";"";"private_company";"";"['Nom, prénom', 'Adresse email', 'Numéro de téléphone']";"";"['https://bonjourlafuite.eu.org/img/digitregroup.png']"
+"2026-10-06";"confirmed";"Hespéride";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Numéro de téléphone']";"";"['https://bonjourlafuite.eu.org/img/hesperide.png']"
