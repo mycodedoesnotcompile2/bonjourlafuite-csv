@@ -587,3 +587,7 @@
 "2026-10-02";"confirmed";"Région Hauts-de-France";"Atexo";"private_company";"";"['Nom, prénom', 'Adresse email']";"";"['https://bonjourlafuite.eu.org/img/hauts-de-france.jpg']"
 "2026-10-04";"confirmed";"Digit RE group";"";"private_company";"";"['Nom, prénom', 'Adresse email', 'Numéro de téléphone']";"";"['https://bonjourlafuite.eu.org/img/digitregroup.png']"
 "2026-10-06";"confirmed";"Hespéride";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Numéro de téléphone']";"";"['https://bonjourlafuite.eu.org/img/hesperide.png']"
+"2026-10-06";"confirmed";"MGEL";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Numéro de téléphone', 'Date de naissance', 'Numéro de sécurité sociale', 'Numéro d’adhérent', 'Coordonnées bancaires']";"True";"['https://bonjourlafuite.eu.org/img/mgel.png']"
+"2026-10-06";"confirmed";"Maileva";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Login', 'Suivi des courriers', 'IBAN', 'Factures', 'Émetteurs et destinataires des courriers']";"True";"['https://bonjourlafuite.eu.org/img/maileva.png']"
+"2026-10-07";"confirmed";"CNAM";"";"private_company";"";"['Nom, prénom', 'Date de naissance', 'Département et ville de naissance']";"";"['https://bonjourlafuite.eu.org/img/cnam-2.png']"
+"2026-10-07";"confirmed";"WayToMe";"";"private_company";"";"['Adresse email']";"";"['https://bonjourlafuite.eu.org/img/waytome.png']"
