@@ -606,3 +606,5 @@
 "2026-10-16";"confirmed";"Vélo Grimpe";"";"private_company";"";"['Adresse email']";"";"['https://bonjourlafuite.eu.org/img/velo-grimpe.png']"
 "2026-10-17";"confirmed";"Diocèse 92";"";"private_company";"";"['Adresse email']";"";"['https://bonjourlafuite.eu.org/img/diocese-92.jpg']"
 "2026-10-21";"confirmed";"Solutions30";"";"private_company";"10 millions de lignes";"";"";"['https://www.cyberattaque.org/solutions30-103-millions-de-lignes-mises-en-vente-les-clients-de-grands-groupes-exposes/']"
+"2026-10-22";"confirmed";"Fédération Française de Tir";"";"private_company";"";"['Nom, prénom', 'Catégorie d’âge', 'Club', 'Grade Cibles Couleurs', 'Pratique handisport', 'Dossier complet']";"True";"['https://bonjourlafuite.eu.org/img/fftir-1.png', 'https://bonjourlafuite.eu.org/img/fftir-2.png']"
+"2026-10-22";"confirmed";"Printerpix";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Historique des commandes', 'Mot de passe']";"";"['https://bonjourlafuite.eu.org/img/printerpix.png']"
