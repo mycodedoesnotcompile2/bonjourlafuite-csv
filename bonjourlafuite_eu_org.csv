@@ -619,4 +619,5 @@
 "2026-10-23";"confirmed";"Point Vision";"";"private_company";"";"['Nom, prénom', 'Date de naissance', 'Adresse postale', 'Adresse email', 'Numéro de téléphone', 'Échanges relatifs aux rendez-vous']";"True";"['https://bonjourlafuite.eu.org/img/point-vision-2.png']"
 "2026-10-23";"confirmed";"Tailleur Auto";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Numéro de téléphone']";"";"['https://bonjourlafuite.eu.org/img/tailleur-auto.png']"
 "2026-10-24";"confirmed";"Alliance Police Nationale";"";"private_company";"";"";"";"['https://www.clubic.com/actualite-635839-alliance-police-nationale-previent-ses-adherents-d-un-acces-non-autorise-a-leurs-donnees.html']"
+"2026-10-27";"confirmed";"Bourse Direct";"";"private_company";"";"['Nom, prénom', 'Numéro de compte', 'IBAN']";"True";"['https://bonjourlafuite.eu.org/img/bourse-direct-1.png', 'https://bonjourlafuite.eu.org/img/bourse-direct-2.png']"
 "2026-10-28";"confirmed";"CTS";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Identifiant']";"";"['https://bonjourlafuite.eu.org/img/cts.png']"
