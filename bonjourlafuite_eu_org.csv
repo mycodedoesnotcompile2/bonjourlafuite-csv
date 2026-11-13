@@ -626,6 +626,7 @@
 "2026-10-28";"confirmed";"CTS";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Identifiant']";"";"['https://bonjourlafuite.eu.org/img/cts.png']"
 "2026-10-30";"confirmed";"Fédération Française de Montagne Escalade";"";"private_company";"";"['Nom, prénom', 'Genre', 'Adresse email', 'Date de naissance', 'Numéro de licence', 'Carnet de formation']";"";"['https://bonjourlafuite.eu.org/img/ffme-2.png']"
 "2026-10-30";"confirmed";"La halle du sommeil";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Numéro de téléphone', 'Historique de commande', 'Début et fin du numéro de carte bancaire', 'Date d’expiration de carte bancaire', 'Date de naissance', 'Échange avec le service client']";"";"['https://bonjourlafuite.eu.org/img/halle-sommeil.png']"
+"2026-10-31";"confirmed";"Qare";"";"private_company";"";"['nom', 'prénom', 'e-mail', 'numéro de téléphone', 'sexe', 'date de naissance']";"True";"['https://bonjourlafuite.eu.org/img/2026-11-12_Qare.png']"
 "2026-11-03";"confirmed";"Gnosis Pay";"";"private_company";"";"['Système de gestion des cartes bancaires']";"True";"['https://bonjourlafuite.eu.org/img/gnosis-pay.png']"
 "2026-11-03";"confirmed";"Smartbox";"";"private_company";"";"['Nom, prénom', 'Adresse email']";"";"['https://bonjourlafuite.eu.org/img/smartbox.png']"
 "2026-11-04";"confirmed";"Rassemblement National";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Numéro de téléphone', 'Profession', 'Année d’adhésion', 'Cotisation', 'Fédération de rattachement']";"True";"['https://bonjourlafuite.eu.org/img/rassemblement-national.png']"
@@ -643,3 +644,4 @@
 "2026-11-11";"confirmed";"Mistertemp Group";"";"private_company";"";"['Nom, prénom', 'Adresse email', 'Numéro de téléphone', 'Nationalité']";"";"['https://bonjourlafuite.eu.org/img/mistertemp.png']"
 "2026-11-11";"confirmed";"Notion";"Fireworks AI";"private_company";"";"['Transcription des discussions']";"";"['https://bonjourlafuite.eu.org/img/notion.png', 'https://www.notion.com/fr/help/security-incident-involving-a-third-party-ai-vendor']"
 "2026-11-11";"confirmed";"Parti Communiste Français";"";"private_company";"";"";"True";"['https://bonjourlafuite.eu.org/img/pcf.png', 'https://www.pcf.fr/le_parti_communiste_francais_fait_l_objet_d_une_fuite_de_donnees']"
+"2026-11-12";"confirmed";"Macif";"Qwertys";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Date de naissance']";"";"['https://bonjourlafuite.eu.org/img/macif-2.png']"
