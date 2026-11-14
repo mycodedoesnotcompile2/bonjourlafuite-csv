@@ -644,4 +644,7 @@
 "2026-11-11";"confirmed";"Mistertemp Group";"";"private_company";"";"['Nom, prénom', 'Adresse email', 'Numéro de téléphone', 'Nationalité']";"";"['https://bonjourlafuite.eu.org/img/mistertemp.png']"
 "2026-11-11";"confirmed";"Notion";"Fireworks AI";"private_company";"";"['Transcription des discussions']";"";"['https://bonjourlafuite.eu.org/img/notion.png', 'https://www.notion.com/fr/help/security-incident-involving-a-third-party-ai-vendor']"
 "2026-11-11";"confirmed";"Parti Communiste Français";"";"private_company";"";"";"True";"['https://bonjourlafuite.eu.org/img/pcf.png', 'https://www.pcf.fr/le_parti_communiste_francais_fait_l_objet_d_une_fuite_de_donnees']"
+"2026-11-12";"confirmed";"Arte VOD";"";"private_company";"";"['Adresse email']";"";"['https://bonjourlafuite.eu.org/img/arte-vod.png']"
 "2026-11-12";"confirmed";"Macif";"Qwertys";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Date de naissance']";"";"['https://bonjourlafuite.eu.org/img/macif-2.png']"
+"2026-11-12";"confirmed";"Ninkasi";"";"private_company";"";"['Nom, prénom', 'Adresse postale', 'Adresse email', 'Numéro de téléphone', 'Historique des commandes']";"";"['https://bonjourlafuite.eu.org/img/ninkasi.png']"
+"2026-11-13";"confirmed";"Cuisine Addict";"";"private_company";"";"['Nom, prénom', 'Mot de passe', 'Adresse postale', 'Adresse email']";"";"['https://bonjourlafuite.eu.org/img/cuisine-addict.png']"
